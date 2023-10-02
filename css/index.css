@@ -1,0 +1,225 @@
+body{
+	height:100%;
+	width: 100%;
+	background-color: #000415;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../Images/CustomizedUnit/HOMEBanner.png");
+}
+
+a{
+	text-decoration: none;
+}
+
+.head_text{
+	margin-top: 130px;
+}
+
+.head_text h1{
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+}
+
+.head_text p{
+	text-align: center;
+	color: #D5D5D5;
+	font-size: 14px;
+}
+
+.homeh1 h1{
+	text-align: center;
+	color: #C1C1C1;
+	font-family: Consolas;
+	font-size: 30px;font-weight: 600;
+	text-decoration: underline;
+	margin-top: 70px;
+	margin-bottom: -50px;
+}
+
+
+.box{
+	background-image: url("../Images/AS/AS_Valhalla/ASV1-background.png");
+	width: 250px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 1px;
+	overflow: hidden;
+	
+}
+
+.slide-img{
+	height: 400px;
+	position: relative;
+}
+
+.slide-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
+.detail-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+.type{
+    display: flex;
+	flex-direction: column;
+}
+
+.type a{
+	color:#D9D9D9;
+	margin: 5px 0px;
+	font-family: calibri;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+}
+
+.type span{
+	color:#606060;
+	font-family: calibri;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.Publisher{
+	color: #525252;
+	font-weight: 600;
+	font-size: 0.7rem;
+	font-family: calibri;
+	letter-spacing: 0.5px;
+}
+
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	width: 55%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay{
+	visibility: hidden;
+}
+
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation: fade 0.5s;
+}
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.games-container{
+	margin: 80px 10px 20px 10px;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+	grid-column-gap: 30px;
+	grid-row-gap: 40px;
+	
+}
+
+.button01{
+	padding: 70px 0px 80px 880px;
+}
+
+.button01 button{
+	border: none;
+	border-radius: 10px;
+	width: 150px;
+	height: 50px;
+	font-size: 18px;
+	color: black;
+	text-align: center;
+}
+
+.button01 button a{
+	color: black;
+}
+
+.button01 button:hover{
+	background-color: #6F6F6F;
+	cursor: pointer;
+}
+
+.button01 button a:hover{
+	color: white;
+}
+
+@media screen and (max-width: 600px){
+	.head_text{
+		margin-top: 130px;
+		width: 300px;
+		border: dashed;
+		border-width: inherit;
+		border-radius: 10px;
+		border-color: #969696;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.head_text h1{
+		text-align: center;
+		color: white;
+		font-size: 16px;
+		text-decoration: underline;
+	}
+
+	.head_text p{
+		text-align: center;
+		color: #D5D5D5;
+		font-size: 08px;
+	}
+	
+	
+	.button01{
+		padding: 40px 0px 60px 114px;
+	}
+	.button01 button{
+		border: none;
+		border-radius: 10px;
+		width: 130px;
+		height: 40px;
+		font-size: 15px;
+		color: black;
+		text-align: center;
+	}
+	.button01 button:hover{
+		background-color: #6F6F6F;
+		cursor: pointer;
+	}
+
+	.button01 button a:hover{
+		color: white;
+	}
+}
+
